@@ -37,14 +37,14 @@ function iniciarMovimiento(cuadrado, container) {
     const posX = parseFloat(cuadrado.style.left);
     const posY = parseFloat(cuadrado.style.top);
 
-    // Verificar colisiones con las paredes
+   
     if (posX + 20 >= ancho || posX <= 0) velocidadX = -velocidadX;
     if (posY + 20 >= alto || posY <= 0) velocidadY = -velocidadY;
 
-    // Actualizar posición
+  
     cuadrado.style.left = `${posX + velocidadX}px`;
     cuadrado.style.top = `${posY + velocidadY}px`;
   };
 
-  setInterval(moverCuadrado, 16); // Ejecutar cada 16ms
+  setInterval(moverCuadrado, 16); 
 }
